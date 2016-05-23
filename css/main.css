@@ -79,16 +79,6 @@ hr {
 	}
 }
 
-@keyframes beat {
-	10%, 50%, 90% {
-		transform: scale(1, 1);
-	}
-
-	20%, 60%, 100% {
-		transform: scale(1.2, 1.2);
-	}
-}
-
 #navigator {
 	position: fixed;
 	bottom: 1em; 
@@ -143,12 +133,6 @@ img#logo {
 	width: 75px;
 }
 
-img#logo:hover {
-	transition: 0.3s all ease;
-	transform: scale(1.2, 1.2);
-	animation: beat 1s;
-}
-
 /* Body */
 
 .icon {
@@ -174,13 +158,13 @@ img#logo:hover {
 }
 
 .post img {
-	-webkit-filter: grayscale(100%);
+	-webkit-filter: none;
 	width: 100%;
 	transition: 0.3s all ease;
 }
 
 .post img:hover {
-	-webkit-filter: none;
+	-webkit-filter: grayscale(100%);
 	transition: 0.3s all ease;
 }
 
